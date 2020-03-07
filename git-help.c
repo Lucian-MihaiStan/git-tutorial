@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 			exit(-1);
 		}
 		strcpy(cmd, "man git-");
-		strcat(cmd, argv[argc]);
+		strcat(cmd, argv[argc - 1]);
 		system(cmd);
 	}
 
